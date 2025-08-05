@@ -12,11 +12,13 @@ const PORT = process.env.PORT || 5000;
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
+  "https://fe-mood-journal.vercel.app", // ✅ ADD dòng này
   "https://mood-journal-ai-snowy.vercel.app",
   "https://mood-journal-bak5ff9df-hieutrs-projects.vercel.app",
   "https://mood-journal-5ssdo4zbk-hieutrs-projects.vercel.app",
   "https://mood-journal-rmrew9vfg-hieutrs-projects.vercel.app"
 ];
+
 
 // ✅ CORS cấu hình an toàn
 app.use(cors({
